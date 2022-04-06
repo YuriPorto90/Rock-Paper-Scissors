@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="RPS.css">
+    <script src="RPS.js" defer></script>
+</head>
+
+<body>
+    <div id="counter">
+        <h3>WINS</h3>
+        <p>Player: <span id="player-wins"></span></p>
+        <p>Bot: <span id="bot-wins"></span></p>
+    </div>
+
+    <div id="buttons">
+        <button class="select-button game-button" onclick="play(1)">Rock</button>
+        <button class="select-button game-button" onclick="play(2)">Paper</button>
+        <button class="select-button game-button" onclick="play(3)">Scissors</button>
+    </div>
+
+    <div id="display">
+        <div class="identifier" style="float: left">Player</div>
+        <div class="identifier" style="float: right">Bot</div>
+        <br>
+        <div style="clear:both">
+        <img id="player-choose" class="pic" src="srcs/None.png" alt="?">
+        <img id="x-pic" src="srcs/versus.png" alt="X">
+        <img id="bot-choose" class="pic" src="srcs/None.png" alt="?">
+        <h1 id="winner-text"></h1>
+        <p id="timer"></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
