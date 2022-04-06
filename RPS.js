@@ -1,7 +1,7 @@
 
 const winnerText = document.querySelector("h1")
 let buttons = document.getElementsByClassName("game-button"); let i;
-let botScore = 0; let playerScore = 0; let newTimer = 5;
+let botScore = 0; let playerScore = 0;
 const playerImg = document.getElementById("player-choose");
 const botImg = document.getElementById("bot-choose");
 const timerDisplay = document.getElementById("timer");
