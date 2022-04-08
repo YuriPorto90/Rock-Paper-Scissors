@@ -11,7 +11,8 @@ document.getElementById("bot-wins").innerHTML = botScore;
 
 
 function play(selected){
-
+    let time = 5
+    
     for (i = 0; i < buttons.length; i++) {
         buttons[i].disabled = true;
     }
@@ -76,8 +77,17 @@ function play(selected){
     document.getElementById("player-wins").innerHTML = playerScore;
     document.getElementById("bot-wins").innerHTML = botScore;
 
-    timerDisplay.innerHTML = 'Next round in  5s!'
+    counter(-1)
+    setTimeout(() => {  counter(-1) }, 1000)
+    setTimeout(() => {  counter(-1) }, 2000)
+    setTimeout(() => {  counter(-1) }, 3000)
+    setTimeout(() => {  counter(-1) }, 4000)
     setTimeout(() => {  reset() }, 5000)
+}
+
+function counter(add){
+    timerDisplay.innerHTML = 'Next round in ' + time + 's!'
+    time += add
 }
 
 function reset(){
