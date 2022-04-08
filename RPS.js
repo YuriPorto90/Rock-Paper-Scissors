@@ -4,14 +4,14 @@ let buttons = document.getElementsByClassName("game-button"); let i;
 let botScore = 0; let playerScore = 0;
 const playerImg = document.getElementById("player-choose");
 const botImg = document.getElementById("bot-choose");
-const timerDisplay = document.getElementById("timer");
+const timerDisplay = document.getElementById("timer"); let time;
 
 document.getElementById("player-wins").innerHTML = playerScore;
 document.getElementById("bot-wins").innerHTML = botScore;
 
 
 function play(selected){
-    let time = 5
+    time = 5
     
     for (i = 0; i < buttons.length; i++) {
         buttons[i].disabled = true;
