@@ -82,7 +82,7 @@ function play(selected){
     setTimeout(() => {  counter(-1) }, 3000)
     setTimeout(() => {  counter(-1) }, 4000)
     setTimeout(() => {  counter(5) }, 5000)
-    setTimeout(() => {  reset() }, 5100)
+    setTimeout(() => {  reset() }, 5500)
 }
 
 function counter(add){
