@@ -4,14 +4,13 @@ let buttons = document.getElementsByClassName("game-button"); let i;
 let botScore = 0; let playerScore = 0;
 const playerImg = document.getElementById("player-choose");
 const botImg = document.getElementById("bot-choose");
-const timerDisplay = document.getElementById("timer"); let time;
+const timerDisplay = document.getElementById("timer"); let time = 5;
 
 document.getElementById("player-wins").innerHTML = playerScore;
 document.getElementById("bot-wins").innerHTML = botScore;
 
 
 function play(selected){
-    time = 5
     
     for (i = 0; i < buttons.length; i++) {
         buttons[i].disabled = true;
@@ -82,7 +81,8 @@ function play(selected){
     setTimeout(() => {  counter(-1) }, 2000)
     setTimeout(() => {  counter(-1) }, 3000)
     setTimeout(() => {  counter(-1) }, 4000)
-    setTimeout(() => {  reset() }, 5000)
+    setTimeout(() => {  counter(5) }, 5000)
+    setTimeout(() => {  reset() }, 5100)
 }
 
 function counter(add){
